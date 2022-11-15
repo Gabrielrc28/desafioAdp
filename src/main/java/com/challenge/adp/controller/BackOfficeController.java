@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class BackOfficeController {
     private BackOfficeService backOfficeService;
 
-    @PostMapping("insert-coin")
-    public void addCoins(@RequestBody CoinRequest coin) {
+    @PostMapping("update-coin")
+    public void updateCoin(@RequestBody CoinRequest coin) {
         backOfficeService.updateCoinAmount(coin);
     }
 }
